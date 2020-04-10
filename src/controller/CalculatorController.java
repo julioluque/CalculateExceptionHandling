@@ -18,7 +18,7 @@ public class CalculatorController extends Action {
 		int sn = Integer.parseInt(request.getParameter("sn"));
 		int tn = fn/sn; 
 		
-		request.setAttribute("response", tn);
+		request.setAttribute("res", tn);
 		
 		return mapping.findForward("success");
 	}

@@ -1,1 +1,1 @@
-<%=request.getAttribute("response")%>
+<%=request.getAttribute("res")%>

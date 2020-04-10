@@ -6,7 +6,8 @@
 
 	<action-mappings>
 		<action path="/cal" type="controller.CalculatorController">
-			<exception type="java.lang.ArithmeticException" key="msg" path="/error.jsp" />
+<!-- 			<exception type="java.lang.ArithmeticException" key="msg" path="/error.jsp" /> -->
+			<exception type="java.lang.ArithmeticException" key="msg" handler="controller.ArithmeticExceptionHandler"></exception>
 			<forward name="success" path="/success.jsp" />
 		</action>
 		
